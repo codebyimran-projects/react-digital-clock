@@ -1,0 +1,103 @@
+/* 1. RESET & ROOT */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --blur:16px;
+  --radius:20px;
+  --easing:cubic-bezier(.4,0,.2,1);
+}
+
+/* 2. INFINITE BACKGROUND FLOW */
+@keyframes hueShift {
+  0%   { filter: hue-rotate(0deg)   saturate(1); }
+  50%  { filter: hue-rotate(180deg) saturate(1.2); }
+  100% { filter: hue-rotate(360deg) saturate(1); }
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+  background:linear-gradient(135deg,#0f0f23,#1e1e38);
+  animation:hueShift 12s linear infinite;
+}
+
+/* 3. THEME COLOURS */
+.theme-cyan{
+  --accent:#00ffffcc;
+  --text:#e0ffff;
+  --shadow:0 0 20px #00ffff80;
+}
+.theme-magenta{
+  --accent:#ff00ffcc;
+  --text:#ffe0ff;
+  --shadow:0 0 20px #ff00ff80;
+}
+
+/* 4. LAYOUT */
+.app{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  transition:background .8s var(--easing);
+}
+
+.glass-panel{
+  padding:3rem 4rem;
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(var(--blur));
+  box-shadow:0 8px 32px rgba(0,0,0,.4),var(--shadow);
+  text-align:center;
+}
+
+/* 5. CLOCK DIGITS */
+.clock-digits{
+  font-size:clamp(3rem,6vw,5rem);
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:.05em;
+  text-shadow:var(--shadow);
+  animation:pulse 2s var(--easing) infinite alternate;
+}
+
+@keyframes pulse{
+  from{transform:scale(1)}
+  to{transform:scale(1.03)}
+}
+
+/* 6. BUTTON */
+.switcher-btn{
+  margin-top:2rem;
+  border:none;
+  padding:.8rem 1.6rem;
+  border-radius:50px;
+  background:linear-gradient(135deg,var(--accent),rgba(255,255,255,.2));
+  color:#fff;
+  font-size:1rem;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  transition:transform .3s var(--easing),box-shadow .3s;
+}
+.switcher-btn:hover{
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:0 6px 24px rgba(0,0,0,.5),var(--shadow);
+}
+.btn-icon{transition:transform .3s}
+.switcher-btn:hover .btn-icon{transform:rotate(180deg)}
+
+/* 7. FOOTER */
+footer{
+  position:fixed;
+  bottom:1.2rem;
+  font-size:.9rem;
+  color:#fff8;
+  letter-spacing:.05em;
+}
+.name{
+  font-weight:600;
+  color:var(--accent);
+}
