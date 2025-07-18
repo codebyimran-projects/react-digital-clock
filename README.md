@@ -19,10 +19,10 @@ Welcome to **React Digital Clock**, a dynamic and modern digital clock built usi
 
 ---
 
-## 📸 Preview
+## 📸 ScreenShot
 
-![React Digital Clock Preview](#)  
-*(Add a screenshot or gif here if available)*
+
+<img width="1280" height="897" alt="screencapture-localhost-5173-2025-07-18-23_52_28" src="https://github.com/user-attachments/assets/271a9027-7f86-47d4-9efa-cab7376ef340" />
 
 ---
 
