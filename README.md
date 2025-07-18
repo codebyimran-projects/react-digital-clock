@@ -22,9 +22,9 @@ Welcome to **React Digital Clock**, a dynamic and modern digital clock built usi
 ## 📸 ScreenShot
 
 
-<img width="1280" height="897" alt="screencapture-localhost-5173-2025-07-18-23_52_28" src="https://github.com/user-attachments/assets/271a9027-7f86-47d4-9efa-cab7376ef340" />
 
----
+---<img width="1280" height="897" alt="screencapture-localhost-5173-2025-07-18-23_53_44" src="https://github.com/user-attachments/assets/0ad4f452-13a5-4cb1-b3b5-6f927aa72d13" />
+
 
 ## 🛠️ Tech Stack
 
