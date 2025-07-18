@@ -1,12 +1,60 @@
-# React + Vite
+# 🕒 React Digital Clock - Color Changing | AM/PM Indicator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **React Digital Clock**, a dynamic and modern digital clock built using **React JS**. This clock not only shows the **current time with AM/PM**, but also includes an **interactive color changer button** and an **automatic color loop mode** that changes background colors over time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Name: `React Digital Clock`
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌟 Features
+
+✅ Real-time digital clock  
+✅ AM/PM indicator  
+✅ Custom "Change Color" button  
+✅ Automatic background color change (looping)  
+✅ Fully responsive design  
+✅ Built with modern React practices (Hooks)
+
+---
+
+## 📸 Preview
+
+![React Digital Clock Preview](#)  
+*(Add a screenshot or gif here if available)*
+
+---
+
+## 🛠️ Tech Stack
+
+- React JS (with Hooks)
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+---
+
+## 📁 Folder Structure
+
+react-digital-clock/
+├── public/
+│ └── index.html
+├── src/
+│ ├── App.js
+│ ├── DigitalClock.js
+│ ├── index.js
+│ └── App.css
+└── README.md
+
+
+---
+
+## 💡 How It Works
+
+- The clock updates every second using `setInterval()`.
+- Time is formatted in 12-hour format with AM/PM using `Date` object.
+- A button allows users to **change the background color** manually.
+- Another mode allows the **background to loop through random colors** continuously.
+
+
